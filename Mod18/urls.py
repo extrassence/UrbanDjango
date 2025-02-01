@@ -20,8 +20,12 @@ from example1.views import index
 from task2.views import func, Clas
 from task3.views import index3, shop, cart
 from task4.views import index4, shop4, cart4
+from task5.views import sign_up_by_html, sign_up_by_django
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('htmlform/', sign_up_by_html, name='htmf'),
+    path('djangoform/', sign_up_by_django, name='djnf'),
     path('', index, name='index'),
     path('index3/', index3, name='index3'),
     path('shop/', shop, name='shop'),
