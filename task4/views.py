@@ -4,20 +4,16 @@ from django.views.generic import TemplateView
 
 # Create your views here.
 
-def index3(request):
-    return render(request, 'Third task/index3.html')
+def index4(request):
+    return render(request, 'Fourth task/index.html')
 
 
-def shop(request):
+def shop4(request):
     context = {
-        'title': 'Бухта добрых клыкарров',
         'items': ['Игровое золото', 'Помощь с прокачкой', 'Помощь в освоении рейдового контента'],
     }
-    return render(request, 'Third task/shop.html', context)
+    return render(request, 'Fourth task/shop.html', context)
 
 
-def cart(request):
-    context = {
-        'title': 'Бухта добрых клыкарров',
-    }
-    return render(request, 'Third task/cart.html', context)
+def cart4(request):
+    return render(request, 'Fourth task/cart.html')
